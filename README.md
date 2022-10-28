@@ -11,7 +11,21 @@ A list of some exercises I've done with Javascript 🤩.
         Input His/Her Name 🤩.
         Made With ❤ By Me David Mesoma Chigozie. Please Star It 👍.
         
-        <script src="Message-Approval.js></script>
+        <script>
+            let username = prompt(`Enter your name: `);
+            let genName = 'User';
+            let msg = function() {
+                return confirm(`Hey ${username || genName}, Are you leaving now 🙁?`);
+            }
+
+            let newMsg = msg();
+
+            if (newMsg == true) {
+                alert(`Bye now ${username || genName} 😥`)
+            } else {
+                alert(`Let's continue the Journey 😁`)
+            }
+        </script>
     </li>
 </ul>
 
